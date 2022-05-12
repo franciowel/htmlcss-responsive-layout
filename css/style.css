@@ -11,7 +11,9 @@ body{
 }
 
 .mobile-padding{
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
 }
 
 .container{
@@ -26,7 +28,7 @@ body{
 /* HEADER */
 header{
     background-color: #0084fd;
-    height: 60px;
+    height: 80px;
 }
 
 .logo img{
@@ -54,7 +56,23 @@ nav ul{
     display: none;
 }
 
-/* DESKTOP RESP */
+/* MAIN */
+.summary{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.summary-parts{
+    flex-direction: column;
+}
+
+.summary-col{
+    border: 1px solid blue;
+    /* width: calc(100% / 3); */
+}
+
+/*** 
+DESKTOP RESP
+***/
 @media screen and (min-width:992px) {
 
     .burger-menu{
