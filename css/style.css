@@ -107,13 +107,13 @@ nav ul{
     flex-direction: column;
 
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     color: black;
     padding: 1rem 1rem;
 }
 
 .strategy-2 img{
-    width: 90%;
+    width: 70%;
     align-self: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -161,6 +161,22 @@ DESKTOP RESP
 
     .desk-menu{
         display: block;
+    }
+
+    .strategy{
+        flex-direction: row;
+        color: white;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .strategy-2{
+        flex-direction: column;
+
+        background-color: white;
+        border-radius: 50px;
+        color: black;
+        padding: 0 1rem;
     }
     
 }
