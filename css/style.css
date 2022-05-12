@@ -67,7 +67,32 @@ nav ul{
 
 .summary-col{
     border: 1px solid blue;
-    /* width: calc(100% / 3); */
+}
+
+/*** 
+TABLET RESP
+***/
+@media screen and (min-width:768px) {
+
+    .summary-parts{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .summary-col{
+        border: 1px solid red;
+        width: calc(100% / 3);
+        padding: 0 1rem;
+    }
+
+    .summary-col:first-child{
+        border: 1px solid green;
+        width: calc((100% / 3) * 2);
+    }
+    
 }
 
 /*** 
