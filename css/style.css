@@ -5,6 +5,71 @@
     box-sizing: border-box;
 }
 
+/* COMMONS */
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
+.mobile-padding{
+    padding: 0 2rem;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+/* HEADER */
+header{
+    background-color: #0084fd;
+    height: 60px;
+}
+
+.logo img{
+    width: 80%;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.burger-menu a{
+    color: inherit;
+    font-size: 22px;
+}
+
+.desk-menu{
+    display: none;
+}
+
+/* DESKTOP RESP */
+@media screen and (min-width:992px) {
+
+    .burger-menu{
+        display: none;
+    }
+
+    .desk-menu{
+        display: block;
+    }
+    
+}
+
+/************************ 
+    (?)MOBILE FIRST-LAYOUT
+        BREAKPOINT:
+        TABLET: 768px
+        DESKTOP:992px 
+**************************/
