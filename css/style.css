@@ -140,7 +140,8 @@ nav ul{
 
 /* PARTNERS */
 .partners{
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
 }
 
 .partner-head{
@@ -164,20 +165,20 @@ nav ul{
 .review{
     background-color: #9792e4;
     border-radius: 45px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
+
 .review-card{
     flex-direction: column;
     align-items: center;
 
     padding: 1.5rem 1rem;
     color: white;
-    text-align: center;
 }
 
 .review-img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -189,9 +190,13 @@ nav ul{
     
 }
 
-.review-card p{
-    line-height: 30px;
-    font-size: 1rem;
+.review-text{
+    text-align: center;
+}
+
+.review-text p{
+    line-height: 32px;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
@@ -224,6 +229,22 @@ TABLET RESP
         border: 1px solid green;
         width: calc((100% / 3) * 2);
     }
+
+    .review-card{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .review-text{
+        width: 70%;
+        height: 100%;
+        text-align: left;
+
+        margin-left: 1rem;
+    }
+
+
     
 }
 
