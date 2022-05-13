@@ -29,6 +29,12 @@ body{
 header{
     background-color: #0084fd;
     height: 80px;
+
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+    width: 100%;
 }
 
 .logo img{
@@ -60,7 +66,7 @@ nav ul{
 
 /* SUMMARY */
 .summary{
-    margin-top: 3rem;
+    margin-top: 8rem;
     margin-bottom: 3rem;
 }
 .summary-parts{
@@ -68,9 +74,71 @@ nav ul{
 }
 
 .summary-col{
-    border: 1px solid blue;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.summary-content{
+    background-color: #b5ddff;
+    border-radius: 20px;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+/* DOWNLOAD DEMO */
+.summary-content-text{
+    padding: 2.5rem 2rem;
+}
+
+.summary-content-text h3{
+    color: #0084fd;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-content-text p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.summary-content-text a{
+    color: white;
+    text-decoration: none;
+    background-color: #0084fd;
+    padding: 10px 25px;
+    border-radius: 20px;
+
+    display: inline-block;
+}
+
+.summary-content-img{
+    align-self: center;
+    width: 60%;
+}
+
+.summary-content-img img{
+    width: 200px;
+}
+
+/* PARTI SUMMARY */
+.summary-content-col{
+    padding: 1.8rem 2rem;
+    flex-direction: column;
+}
+
+.summary-content-col span{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #0084fd;
+}
+
+.summary-content-col h3{
+    color: #0084fd;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* STRATEGY */
@@ -92,41 +160,47 @@ nav ul{
 }
 
 .strategy-1 h2{
-    font-size: 36px;
+    font-size: 2.5rem;
     padding-bottom: 2rem;
+}
+
+.strategy-1 p{
+    padding-right: 3rem;
 }
 
 .strategy-1 img{
-    width: 90%;
+    width: 80%;
     align-self: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
 }
 
 .strategy-card{
+    text-align: center;
     flex-direction: column;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 55px;
     color: black;
-    padding: 1rem 1rem;
+    padding: 2rem 2.5rem;
 
 }
 
-/* .strategy-2{    
-    color: black;
-    padding: 1rem 1rem;
-} */
-
 .strategy-2 img{
-    width: 70%;
+    width: 80%;
     align-self: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.strategy-2 h2,
+.strategy-2 h2{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.6rem;
+}
+
 .strategy-2 p{
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    font-style: italic;
 }
 
 .strategy-2 a{
@@ -134,6 +208,7 @@ nav ul{
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    line-height: 50px;
     text-align: center;
     align-self: center;
 }
@@ -417,13 +492,12 @@ TABLET RESP
     }
 
     .summary-col{
-        border: 1px solid red;
         width: calc(100% / 3);
         padding: 0 1rem;
+
     }
 
     .summary-col:first-child{
-        border: 1px solid green;
         width: calc((100% / 3) * 2);
     }
 
@@ -486,7 +560,7 @@ TABLET RESP
 DESKTOP RESP
 ***/
 @media screen and (min-width:992px) {
-
+    /* NAVBAR */
     .burger-menu{
         display: none;
     }
@@ -499,6 +573,17 @@ DESKTOP RESP
         color: white;
         text-decoration: none;
         margin-left: 1rem;
+    }
+
+    /* SUMMARY */
+    .summary-content{
+        flex-direction: row;
+    }
+
+    .summary-content-img{
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .btn-start :last-child{
@@ -518,19 +603,18 @@ DESKTOP RESP
 
     .strategy-2{
         flex-direction: column;
-
+        align-self: flex-end;
         background-color: white;
         border-radius: 50px;
         color: black;
         padding: 0 1rem;
-        justify-content: flex-end;
-        flex-wrap: wrap;
     }
 
     /* BENEFITS DESK */
     .benefits-card{
         width: calc((100% / 3) - 1rem);
     }
+
     
 }
 
