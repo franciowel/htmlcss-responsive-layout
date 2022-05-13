@@ -327,6 +327,24 @@ DESKTOP RESP
         display: block;
     }
 
+    .desk-menu ul{
+        
+    }
+
+    .desk-menu ul a{
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .btn-start :last-child{
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px 25px;
+    }
+
+    /* STRATEGY DESK */
     .strategy{
         flex-direction: row;
         color: white;
@@ -345,6 +363,7 @@ DESKTOP RESP
         flex-wrap: wrap;
     }
 
+    /* BENEFITS DESK */
     .benefits-card{
         width: calc((100% / 3) - 1rem);
     }
