@@ -186,8 +186,7 @@ nav ul{
 .review-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
 .review-text{
@@ -248,7 +247,7 @@ nav ul{
     color: #9792e4;
     margin-bottom: 1rem;
 }
-
+        /* BUTTON */
 .benefits-card-content a{
     text-decoration: none;
     letter-spacing: 2px;
@@ -258,6 +257,149 @@ nav ul{
     background-color: #9792e4;
     padding: 10px 55px;
     border-radius: 20px;
+}
+
+/* ABOUT */
+.about{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.about-content{
+    flex-direction: column;
+}
+
+.about-text h2{
+    font-size: 2.2rem;
+    color: #9792e4;
+    margin-bottom: 2rem;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    line-height: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-picbox{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    width: 180px;
+    height: 180px;
+
+    position: relative;
+}
+
+.quote{
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    color: #9792e4;
+    font-size: 3.5rem;
+}
+
+.ceo-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ceo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.about-ceo p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9792e4;
+    margin-bottom: 1.5rem;
+    padding-right: 2rem;
+}
+        /* BUTTON */
+.about-ceo a{
+    text-decoration: none;
+    background-color: #9792e4;
+    color: white;
+    font-size: 1.1rem;
+
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* JUMBOTRON */
+.jumbo{
+    background-color: #9792e4;
+    padding-top: 3.5rem;
+}
+
+.jumbo-content{
+    text-align: center;
+    color: white;
+}
+
+.jumbo-content h3{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.jumbo-content h2{
+    color: #fdc15f;
+    font-size: 3.2rem;
+
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.jumbo-content p{
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+
+.jumbo-content p:last-child{
+    font-size: 0.8rem;
+}
+
+.jumbo-content p:last-child a{
+    color: inherit;
+}
+
+        /* JUMBO BTN */
+.jumbo-btn{
+    font-weight: bold;
+    text-decoration: none;
+    color: #9792e4;
+    background-color: white;
+    border-radius: 30px;
+    letter-spacing: 2px;
+
+    padding: 16px 50px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+.foot{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+
+}
+
+.foot-content{
+    padding-top: 3rem;
+}
+
+.foot-content p{
+    padding: 3rem 2rem;
+}
+
+.foot-content p:last-child a{
+    color: #9792e4;
 }
 
 /*** 
@@ -293,7 +435,7 @@ TABLET RESP
     }
 
     .review-text{
-        width: 70%;
+        width: calc(100% - 200px);
         height: 100%;
         text-align: left;
 
@@ -308,6 +450,32 @@ TABLET RESP
 
     .benefits-card{
         width: calc((100% / 2) - 1rem);
+    }
+
+    /* ABOUT */
+    .about-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-text{
+        width: 60%;
+    }
+
+    .about-ceo{
+        width: 30%;
+    }
+
+    /* JUMBOTRON */
+    .container-jumbo{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    .container-foot{
+        width: 65%;
+        margin: 0 auto;
     }
 
 
@@ -325,10 +493,6 @@ DESKTOP RESP
 
     .desk-menu{
         display: block;
-    }
-
-    .desk-menu ul{
-        
     }
 
     .desk-menu ul a{
