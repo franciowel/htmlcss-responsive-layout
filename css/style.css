@@ -203,7 +203,61 @@ nav ul{
 
 .review-card span:last-child{
     font-weight: bold;
+    letter-spacing: 2px;
     font-size: 1.1rem;
+}
+
+/* BENEFITS */
+.benefits{
+    background-color: #9792e4;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.benefits-head h2{
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+.benefits-points{
+    flex-direction: column;
+}
+
+.benefits-card{
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 35px;
+    padding: 3rem 2rem;
+}
+
+.benefits-card-content p{
+    margin-bottom: 2.5rem;
+    line-height: 30px;
+}
+
+.benefits-card-content p:first-child{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #9792e4;
+}
+
+.benefits-card-content h3{
+    font-size: 1.5rem;
+    color: #9792e4;
+    margin-bottom: 1rem;
+}
+
+.benefits-card-content a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #9792e4;
+    padding: 10px 55px;
+    border-radius: 20px;
 }
 
 /*** 
@@ -211,6 +265,7 @@ TABLET RESP
 ***/
 @media screen and (min-width:768px) {
 
+    /* SUMMARY SECTION */
     .summary-parts{
         flex-direction: row;
         flex-wrap: wrap;
@@ -230,6 +285,7 @@ TABLET RESP
         width: calc((100% / 3) * 2);
     }
 
+    /* REVIEW SECTION */
     .review-card{
         flex-direction: row;
         align-items: center;
@@ -242,6 +298,16 @@ TABLET RESP
         text-align: left;
 
         margin-left: 1rem;
+    }
+
+    .benefits-points{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .benefits-card{
+        width: calc((100% / 2) - 1rem);
     }
 
 
@@ -277,6 +343,10 @@ DESKTOP RESP
         padding: 0 1rem;
         justify-content: flex-end;
         flex-wrap: wrap;
+    }
+
+    .benefits-card{
+        width: calc((100% / 3) - 1rem);
     }
     
 }
